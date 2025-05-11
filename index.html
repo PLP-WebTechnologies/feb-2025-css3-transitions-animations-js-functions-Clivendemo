@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Tutor Profile</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    header {
+      padding: 32px;
+      background-color: #4CAF50;
+      color: white;
+    }
+    section {
+      margin: 32px auto;
+      max-width: 900px;
+    }
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .skill-box {
+      padding: 16px;
+      border: 1px solid rgb(238, 233, 233);
+      border-radius: 20px;
+      background-color: #e4d9d9;
+    }
+    #contact {
+      background: url('https://images.unsplash.com/photo-1520975911433-ec79b3b85147') no-repeat center center/cover;
+      color: white;
+      padding: 48px 16px;
+    }
+    form {
+      background-color: rgba(0, 0, 20, 0.8);
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 16px;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      padding: 11px 32px;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="title">Passionate Science & Computer Studies Tutor</h1>
+    <p>I help learners improve academically, gain confidence, and unlock their full potential.</p>
+    <button onclick="changeTitle()">Click Here To Change Title</button>
+  </header>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill-box">
+        <h3>Physics</h3>
+        <p>Helping learners understand the laws of nature.</p>
+      </div>
+      <div class="skill-box">
+        <h3>Chemistry</h3>
+        <p>Mastering concepts through practical and theoretical approaches.</p>
+      </div>
+      <div class="skill-box">
+        <h3>Computer Studies</h3>
+        <p>Instilling digital skills for the modern world.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <button onclick="showMessage()">Show/Hide Motivation Message</button>
+    <div id="message-area"></div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  <h2>Change Section Background Color</h2>
+
+  <label for="sectionColorPicker">Pick a background color:</label>
+  <input type="color" id="sectionColorPicker">
+
+  <section id="customSection">
+    <h3>You can reach us through our Social Media Handles</h3>
+    <p>
+      <a href="https://facebook.com/yourprofile"> Facebook |</a>
+    <a href="https://twitter.com/yourprofile" > X |</a>
+    <a href="https://linkedin.com/in/yourprofile" > Linkedn </a>
+
+    </p>
+  </section>
+  <script src="script.js"></script>
+</body>
+<footer>
+  <p>&copy; 2025 My Tutor Profile. All rights reserved.</p>
+  <p>
+    <a href="#contact" style="color: #4CAF50; text-decoration: none; margin: 0 10px;">Contact Us</a>
+    
+  </p>
+</footer>
+</html>
